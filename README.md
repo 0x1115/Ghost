@@ -17,16 +17,15 @@ git clone git://github.com/tryghost/ghost.git
 cd ghost
 ```
 
-Install Grunt.
+Install
 
 ```bash
-npm install -g grunt-cli
+npm install -g grunt-cli && npm install
 ```
 
-For production, use [stable](tree/stable).
-
+Template install
 ```bash
-npm install
+cd content/themes/casper && npm install && npm run build
 ```
 
 Build
@@ -35,7 +34,7 @@ Build
 grunt init
 ```
 
-Minify them for production?
+Minify
 
 ```bash
 grunt prod
