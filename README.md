@@ -13,8 +13,9 @@ Install Node.js. (See [Supported Node.js versions](http://support.ghost.org/supp
 Clone Ghost
 
 ```bash
-git clone git://github.com/tryghost/ghost.git
-cd ghost
+git clone git://github.com/0x1115/Ghost.git
+cd Ghost
+# Remember to use branch 0x1115. Check it out if needed.
 ```
 
 Install
