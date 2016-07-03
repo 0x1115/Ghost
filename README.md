@@ -18,25 +18,25 @@ cd Ghost
 # Remember to use branch 0x1115. Check it out if needed.
 ```
 
+Install Casper theme
+
+```bash
+cd content/themes/casper && npm install --dev && npm run build && cd ../../../
+```
+
 Install Ghost
 
 ```bash
 npm install -g grunt-cli && npm install
 ```
 
-Install Casper theme
-
-```bash
-cd content/themes/casper && npm install --dev && npm run build
-```
-
-Build Casper
+Build Ghost
 
 ```bash
 grunt init
 ```
 
-Minify Casper (optinal)
+Minify Ghost (optional)
 
 ```bash
 grunt prod
@@ -45,10 +45,6 @@ grunt prod
 Start Ghost
 
 ```bash
-# Back to the root directory of Ghost
-cd ../../../
-
-# Start it
 npm start
 
 ## running production? Add --production
