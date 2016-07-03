@@ -60,23 +60,9 @@ vim config.js
 ```
 My configuration?
 ```js
-# It's not the full configuration
-config = {
-    // Production
-    production: {
-        url: 'http://blog.0x1115.org/',
-        database: {
-            connection: {
-                filename: path.join('/data/blog.0x1115/ghost.db')
-            }
-            // etc
-        },
-        // etc
-        paths: {
-            contentPath: path.join('/data/blog.0x1115/content/')
-        }
-    }
-}
+// It's not the full configuration
+config.production.database.connection.filename = path.join('/data/blog.0x1115/ghost.db')
+config.production.paths.contentPath = path.join('/data/blog.0x1115/content/')
 ```
 
 ## Copyright & License
