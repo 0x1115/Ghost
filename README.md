@@ -27,6 +27,8 @@ cd content/themes/casper && npm install --dev && npm run build && cd ../../../
 Install Ghost
 
 ```bash
+# Make sure the NODE_ENV is not production: echo $NODE_ENV
+# Set it to development if needed: export NODE_ENV=development
 npm install -g grunt-cli && npm install
 ```
 
@@ -47,9 +49,36 @@ Start Ghost
 ```bash
 npm start
 
-## running production? Add --production
+# running production? Add --production
 ```
 
-# Copyright & License
+## Configuration
+
+```bash
+vim config.js
+# You're on your own now
+```
+My configuration?
+```js
+# It's not the full configuration
+config = {
+    // Production
+    production: {
+        url: 'http://blog.0x1115.org/',
+        database: {
+            connection: {
+                filename: path.join('/data/blog.0x1115/ghost.db')
+            }
+            // etc
+        },
+        // etc
+        paths: {
+            contentPath: path.join('/data/blog.0x1115/content/')
+        }
+    }
+}
+```
+
+## Copyright & License
 
 Copyright (c) 2013-2016 Ghost Foundation - Released under the [MIT license](LICENSE).
