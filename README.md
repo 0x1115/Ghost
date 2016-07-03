@@ -1,9 +1,9 @@
-# Ghost platform - 0x1115 fork
-#### It's basically Ghost with some modifications from us
+# Ghost - 0x1115 fork
+#### It's basically Ghost platform with some modifications from us
 
-## Developer Install (from git)
+## Install
 
-Install Node.js. (See [Supported Node.js versions](http://support.ghost.org/supported-node-versions/))
+Node.js. (See [Supported Node.js versions](http://support.ghost.org/supported-node-versions/))
 
 ```bash
 # Node v0.10.x - recommended
@@ -13,37 +13,42 @@ Install Node.js. (See [Supported Node.js versions](http://support.ghost.org/supp
 Clone Ghost
 
 ```bash
-git clone git://github.com/0x1115/Ghost.git
+git clone --recursive git://github.com/0x1115/Ghost.git
 cd Ghost
 # Remember to use branch 0x1115. Check it out if needed.
 ```
 
-Install
+Install Ghost
 
 ```bash
 npm install -g grunt-cli && npm install
 ```
 
-Template install
+Install Casper theme
+
 ```bash
-cd content/themes/casper && npm install && npm run build
+cd content/themes/casper && npm install --dev && npm run build
 ```
 
-Build
+Build Casper
 
 ```bash
 grunt init
 ```
 
-Minify
+Minify Casper (optinal)
 
 ```bash
 grunt prod
 ```
 
-Start
+Start Ghost
 
 ```bash
+# Back to the root directory of Ghost
+cd ../../../
+
+# Start it
 npm start
 
 ## running production? Add --production
