@@ -3,11 +3,12 @@
 
 ## Install
 
+<<<<<<< HEAD
 Node.js. (See [Supported Node.js versions](http://support.ghost.org/supported-node-versions/))
 
 ```bash
-# Node v0.10.x - recommended
-# Node v0.12.x and v4.2+ LTS - supported
+# Node v4.2+ LTS - recommended
+# Node v0.10.x and v0.12.x - supported
 ```
 
 Clone Ghost
